@@ -37,3 +37,9 @@ document.querySelectorAll('.jump-text').forEach(title => {
         setTimeout(() => title.classList.remove('jump-active'), 500);
     });
 });
+const toggle=document.getElementById("menu-toggle");
+const nav=document.getElementById("nav-links");
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.classList.toggle("open");
+});
