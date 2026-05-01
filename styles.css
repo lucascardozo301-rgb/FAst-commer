@@ -36,8 +36,10 @@ background-color: #050505;
 color: #333;
 overflow-x: hidden;
 }
-/* Navegación */
-.navbar {
+/* Navegación */.navbar {
+    position: relative;
+    z-index: 100;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,7 +156,8 @@ overflow-x: hidden;
 }
 
 .hero-bg-image {
-    position: absolute;
+    pointer-events: none;
+
     top: 0;
     left: 0;
     width: 100%;
