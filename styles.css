@@ -145,14 +145,16 @@ overflow-x: hidden;
 
 /* Hero Section (Fondo Moderno) */
 .hero {
+    white-space: nowrap;
     height: 100vh;
+    
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    overflow: hidden;
+
 }
 
 .hero-bg-image {
@@ -261,4 +263,30 @@ position: relative;
     .nav-links a:hover::after{
         width: 100%;
 
+    }
+    .footer { 
+        background: #111827;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .footer-content p {
+margin-bottom: 10px;
+font-size: 30px;
+    }
+    .contacto {
+        
+
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+    }
+    .contacto img {
+        width: 40px;
+        transition: transform 0.3s;
+
+    }
+    .contacto img:hover {
+        transform: scale(1.2);
     }
