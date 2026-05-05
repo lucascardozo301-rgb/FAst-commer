@@ -290,3 +290,27 @@ font-size: 30px;
     .contacto img:hover {
         transform: scale(1.2);
     }
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.cardd {
+    background:#00d4ff ;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgb(195, 195, 228);
+    transition: transform o.2s ease,box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+}
+.card:hover {
+    box-shadow: #00d4ff
+    blanchedalmond;
+}
+
