@@ -82,6 +82,10 @@ body::before{
 
 /* LOGO */
 .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     font-size: 1.8rem;
 
     font-weight: bold;
@@ -95,8 +99,22 @@ body::before{
 
 .logo:hover{
     transform: scale(1.1);
-}
 
+}
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:2px solid #00b8dd;
+    box-shadow: #0a0f1c,#111827;
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.logo:hover img {
+    box-shadow: #00b8dd, #00d4ff;
+}
 /* LINKS */
 .nav-links{
     display: flex;
@@ -247,20 +265,27 @@ body::before{
     display: flex;
 
     justify-content: center;
-
+align-items: stretch;
     gap: 35px;
 
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;
+width: 100%;
+max-width: 1400px;
     padding: 100px 20px;
 
     background: white;
 }
+@media(max-width: 1024px){
+    .cards-container{
+        flex-wrap: wrap;
+    }
+}
 
 /* CARD */
 .card-modern{
-    width: 320px;
-    height: 500px;
+    flex: 1;
+    max-width: 350px;
+    min-width: 280px;
 
     position: relative;
 
@@ -412,11 +437,33 @@ body::before{
 .footer{
     background: #111827;
 
-    padding: 40px 20px;
+    padding: 20px ;
 
     text-align: center;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+
+}
+.footer-logo img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #00b8dd;
+    box-shadow: #00b8dd,#00d4ff;
+    transition: 0.3;;
+}
+.footer-logo img:hover {
+    transform: scale(1.08);
+    box-shadow: #0a0f1c, #111827;
+}
 .contacto{
     display: flex;
 
