@@ -118,7 +118,7 @@ body::before{
 /* LINKS */
 .nav-links{
     display: flex;
-
+text-transform: uppercase;
     gap: 20px;
 
     list-style: none;
@@ -184,6 +184,9 @@ body::before{
 
 /* TITULO 3D */
 .title-3d{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px;
     transition:
         transform 0.5s ease,
         color 0.3s ease,
@@ -221,7 +224,7 @@ body::before{
 /* CARD SIMPLE */
 .card-simple{
     background: white;
-
+font-size: 20px;
     margin-top: 30px;
 
     padding: 40px;
@@ -345,7 +348,7 @@ max-width: 1400px;
 /* TITULO */
 .card-content h2{
     color: #00d4ff;
-
+text-transform: uppercase;
     font-size: 2rem;
 
     margin-bottom: 10px;
@@ -354,7 +357,7 @@ max-width: 1400px;
 /* TEXTO */
 .card-content p{
     color: #d1d5db;
-
+text-transform: uppercase;
     line-height: 1.6;
 
     margin-bottom: 20px;
