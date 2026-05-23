@@ -115,14 +115,14 @@ body::before{
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
-/* Móvil: logo más chico */
 @media(max-width: 768px){
-    .logo img {
-        width: 45px;
-        height: 45px;
+    .navbar .logo img {
+        width: 45px !important;
+        height: 45px !important;
     }
     .navbar{
-        padding: 10px 15px; /* achicá el padding de la barra también */
+        padding: 10px 15px;
+        min-height: 60px;
     }
 }
 .logo:hover img {
