@@ -118,6 +118,16 @@ body::before{
 .logo:hover img {
     box-shadow: #00b8dd, #00d4ff;
 }
+/* Móvil: logo más chico */
+@media(max-width: 768px){
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    .navbar{
+        padding: 10px 15px; /* achicá el padding de la barra también */
+    }
+}
 /* LINKS */
 .nav-links{
     display: flex;
