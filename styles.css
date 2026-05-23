@@ -121,8 +121,8 @@ body::before{
 /* Móvil: logo más chico */
 @media(max-width: 768px){
     .logo img {
-        width: 45px;
-        height: 45px;
+        width: 25px;
+        height: 25px;
     }
     .navbar{
         padding: 10px 15px; /* achicá el padding de la barra también */
